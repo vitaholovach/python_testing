@@ -1,6 +1,6 @@
 import pytest
 
-from HW14.human import Human
+from hw_task_14.human import Human
 
 
 def test_grow_human():
