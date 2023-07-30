@@ -52,7 +52,7 @@ def test_change_gender_human_invalid():
     human = Human("Bob", 35, "male")
     with pytest.raises(Exception):
         human.change_gender("invalid_gender"), "Exception is not raised when changing to an invalid gender"
-    assert 'invalid_gender' != 'male' or 'female', 'Not available Gender'
+    assert 'invalid_gender' != "male" or "female", "Not available Gender"
 
 
 def test_age_property_human_1():
