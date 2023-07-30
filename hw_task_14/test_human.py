@@ -42,7 +42,7 @@ def test_change_gender_human_1():
 
 
 def test_change_gender_human_already_same():
-    human = Human("Alice", 40, "female")
+    human = Human("Alice", 41, "female")
     with pytest.raises(Exception):
         human.change_gender("female"), "Exception is not raised when changing to the same gender"
     assert human.gender == "female", "Gender is changed even when attempting to set the same gender"
